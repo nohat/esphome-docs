@@ -1,5 +1,5 @@
 Event Component
-================
+===============
 
 .. seo::
     :description: Instructions for setting up event components in ESPHome.
@@ -20,8 +20,10 @@ ESPHome supports the creation of event entities in Home Assistant. These entitie
     Whatever is the earliest version to incorporate these PRs:
     https://github.com/esphome/aioesphomeapi/pull/853
 
+.. _config-event:
+
 Base Event Configuration
--------------------------
+------------------------
 
 Each event in ESPHome needs to be configured with a list of event types it can trigger and an optional device class.
 
@@ -68,6 +70,7 @@ Configuration variables:
   - button: For remote control buttons.
   - doorbell: Specifically for buttons that are used as a doorbell.
   - motion: For motion events detected by a motion sensor.
+
   See https://www.home-assistant.io/integrations/event/#device-class
   for a list of available options.
 
@@ -101,7 +104,7 @@ This automation will be triggered when an event of the specified types is trigge
 Configuration variables: see :ref:`Automation <automation>`.
 
 ``event.fire`` Action
-********************
+*********************
 
 This action allows for the firing of an event from within an automation.
 
